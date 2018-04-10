@@ -10,27 +10,29 @@
 <style type="text/css">
     .clock {  
         position: relative;  
-        width: 400px;  
-        height: 400px;  
+        width: 500px;  
+        height: 490px;  
         margin: 20px auto;  
         border-radius: 50%;  
-        background: url(images/clock.png);  
+        background: url(tt.png);  
     }  
     .clock div:nth-child(1), .clock div:nth-child(2), .clock div:nth-child(3), .clock div:nth-child(4) {  
         position: absolute;  
         -webkit-transform-origin: bottom;  
     }  
-    .clock #sec {  
-        top: 45px;  
-        left: 197px;  
+    .clock #sec {
+        z-index: 3;
+        top: 85px;  
+        left: 245px;  
         width: 4px;  
         height: 160px;  
         border-top-right-radius: 50px;  
         background: blue;  
     }  
     .clock #min {  
-        top: 80px;  
-        left: 195px;  
+        z-index: 2;
+        top: 130px;  
+        left: 250px;  
         width: 6px;  
         height: 120px;  
         border-top-right-radius: 10px;  
@@ -38,8 +40,9 @@
         background: green;  
     }  
     .clock #hour {  
-        top: 100px;  
-        left: 195px;  
+        z-index: 1;
+        top: 145px;  
+        left: 248px;  
         width: 8px;  
         height: 100px;  
         border-top-right-radius: 10px;  
@@ -47,8 +50,9 @@
         background: red;  
     }  
     .clock #center {  
-        top: 189px;  
-        left: 188px;  
+        z-index: 4;
+        top: 235px;  
+        left: 240px;  
         width: 20px;  
         height: 20px;  
         border: 1px solid #fff;  
